@@ -81,7 +81,7 @@
       <main class="main">
          <!--==================== homee ====================-->
          <section class="homee section" id="Home">
-            <div class="image-slider">
+            <!-- <div class="image-slider">
                <div class="slides">
                   <img src="assets/img/adobestock-637650512.jpeg"
                      alt=" Slider Image 1">
@@ -91,7 +91,41 @@
                   <img src="assets/img/Public-Network_Picture_without-Logo.jpg"
                      alt="Slider Image 3">
                </div>
+            </div> -->
+
+            <!-- Start Image Slider -->
+
+            <div class="slider" id="slider1">
+               <!-- Slides -->
+               <div
+                  style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_110627-8240-Myst.jpg)"></div>
+               <div
+                  style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/Gif-pont-lueur-600.gif)"></div>
+               <div
+                  style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_Sharpened-version.jpg)"></div>
+               <div
+                  style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/jungle.jpg)"></div>
+               <div
+                  style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_bodie-11.jpg)"></div>
+               <!-- The Arrows -->
+               <i class="left arrows"
+                  style="z-index:2; position:absolute;"><svg
+                     viewBox="0 0 100 100">
+                     <path
+                        d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+                  </svg></i>
+               <i class="right arrows"
+                  style="z-index:2; position:absolute;"><svg
+                     viewBox="0 0 100 100">
+                     <path
+                        d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                        transform="translate(100, 100) rotate(180) "></path>
+                  </svg></i>
+               <!-- Title Bar -->
+
             </div>
+
+            <!-- End Image Slider  -->
 
             <div class="homee__container containerr grid">
                <div class="homee__data">
@@ -131,7 +165,7 @@
             </div>
          </section>
          <!--==================== ABOUT ====================-->
-         <section class="about section" id="About-Us">
+         <section class="about section padabout" id="About-Us">
             <div class="about__container container grid">
                <div class="about__data">
                   <h2 class="section__title">About Us</h2>
@@ -922,6 +956,7 @@
          <i class="ri-arrow-up-line"></i>
       </a>
 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <!--=============== SCROLLREVEAL ===============-->
       <script src="assets/js/scrollreveal.min.js"></script>
 
