@@ -1,8 +1,46 @@
-/* .ll {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=archivo@100,200,300,400,500,600,700,800,900&f[]=clash-display@200,300,400,500,600,700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 2.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(28, 88%, 62%);
+  --first-color-alt: hsl(28, 84%, 58%);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 75%);
+  --text-color-light: hsl(0, 0%, 65%);
+  --black-color: hsl(0, 0%, 6%);
+  --body-color: hsl(0, 0%, 6%);
+  --container-color: hsl(0, 0%, 10%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Dancing Script", cursive;
+  --biggest-font-size: 3rem;
+  --bigger-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+.contgg {
+  background-color: rgba(0, 0, 0, 0.431);
+  padding: 2rem;
+}
 
 .bodyy1 {
   height: 90vh;
@@ -19,8 +57,6 @@
 }
 
 .item2 {
-  width: 200px;
-  height: 300px;
   list-style-type: none;
   position: absolute;
   top: 50%;
@@ -72,14 +108,15 @@
   display: none;
 
   & .title {
-    font-family: "arial-black";
+    font-size: var(--h2-font-size);
     text-transform: uppercase;
+    font-family: "Montserrat";
   }
 
   & .description {
     line-height: 1.7;
     margin: 1rem 0 1.5rem;
-    font-size: 0.8rem;
+    font-size: var(--body-font);
   }
 }
 
@@ -128,7 +165,7 @@
       font-size: 1rem;
     }
     & .description {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
     }
     & button {
       font-size: 0.7rem;
