@@ -4,7 +4,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 2.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -101,6 +101,20 @@ img {
 }
 
 /* ========================== custom =========================== */
+
+.imageBox {
+  border: 2px solid var(--first-color); /* Add a border/frame */
+  box-sizing: border-box; /* Include border in the element's total width and height */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  flex: 1;
+  padding: 10px; /* Optional: add padding between columns */
+}
 .mar-9 {
   margin-top: 10.5rem;
   margin-bottom: 10.5rem;
@@ -108,6 +122,18 @@ img {
 
 .padd-1 {
   margin-bottom: 10.5rem;
+}
+
+.image_container_side {
+  border-radius: 100px;
+}
+
+.title_SeconPage {
+  color: var(--first-color);
+  font-size: 3rem;
+}
+.decSecondPage {
+  font-size: var(--h3-font-size);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -192,7 +218,15 @@ img {
   color: var(--title-color);
   cursor: pointer;
 }
+.nav__link {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+}
 
+.nav__link:hover {
+  color: var(--first-color);
+}
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
   .nav__menu {
@@ -216,6 +250,7 @@ img {
 }
 
 .nav__link {
+  display: block;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   transition: color 0.4s;
@@ -1160,5 +1195,48 @@ img {
     right: 3rem;
   }
 }
-/* g */
-/* hg */
+
+/* Dropdown menu styles */
+
+.nav__item {
+  position: relative;
+}
+.dropdown {
+  border-radius: 12px;
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the parent */
+  left: -40px; /* Align it with the left edge of the parent */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #0000004a;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown__item {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.dropdown__link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--title-color);
+}
+.dropdown__link:hover {
+  color: var(--first-color-alt);
+}
+
+/* Show the dropdown on hover */
+.nav__item:hover .dropdown {
+  display: block;
+}
+
+li > p:after {
+  content: " »";
+}
+li > p:only-child:after {
+  content: "";
+}

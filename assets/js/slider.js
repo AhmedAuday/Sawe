@@ -133,7 +133,7 @@ $(document).ready(function () {
       fadeSpeed: 800,
       autoPlay: "on",
       showArrows: "off",
-      hideDots: "off",
+      hideDots: "on",
       hoverZoom: "on",
       titleBarTop: "off"
    });
