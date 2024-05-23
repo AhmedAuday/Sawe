@@ -335,10 +335,12 @@ img {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
   border-radius: 10px; /* Rounded corners */
-  margin: 20px;
-  margin-top: 60px;
-  padding-left: 82px;
-  padding-right: 43px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  box-sizing: border-box; /* Ensure padding is included in width and height */
 }
 /* Start image Slider  */
 
@@ -576,10 +578,8 @@ img {
 }
 
 .homee__title {
-  font-size: var(--biggest-font-size);
-  font-family: var(--second-font);
-  font-family: --body-font;
-  margin-bottom: 1.5rem;
+  font-size: var(--bigger-font-size);
+  font-family: var(--body-font);
 }
 
 .homee__bread {
@@ -932,6 +932,12 @@ img {
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+
+@media screen and (min-hight: 800px) {
+  .homee__container {
+    margin: 41px auto -7px 238px;
+  }
+}
 
 @media screen and (max-width: 1142px) {
   .homee__container {
