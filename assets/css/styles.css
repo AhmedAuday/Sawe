@@ -241,6 +241,24 @@ img {
     padding: 6rem 3rem 0;
     transition: right 0.4s;
   }
+
+  .dropdown {
+    position: static; /* Position dropdown relative to parent */
+    box-shadow: none; /* Remove shadow */
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background */
+  }
+
+  .dropdown__link {
+    padding: 15px 20px;
+  }
+
+  .dropdown__link:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Light background on hover */
+  }
+}
+.nav__logo-img {
+  width: 80px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .nav__list {
@@ -943,7 +961,12 @@ img {
   .homee__container {
     display: none;
   }
+  .nav__logo-img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
+
 @media screen and (max-width: 340px) {
   .homee__container {
     display: none;

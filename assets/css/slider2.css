@@ -172,9 +172,6 @@
     }
   }
   .item2 {
-    width: 160px;
-    height: 270px;
-
     &:nth-child(3) {
       left: 50%;
     }
@@ -197,16 +194,13 @@
       font-size: 0.9rem;
     }
     & .description {
-      font-size: 0.65rem;
+      font-size: 0.7rem;
     }
     & button {
       font-size: 0.7rem;
     }
   }
   .item2 {
-    width: 130px;
-    height: 220px;
-
     &:nth-child(3) {
       left: 50%;
     }
